@@ -12,7 +12,8 @@ class Wingbar < Formula
   def install
     # Homebrew steps into a lone top-level folder, so we may be inside Wingbar.app
     app = File.directory?("Contents") ? Pathname.pwd : Pathname("Wingbar.app")
-    (prefix/"Wingbar.app").install app.children
+    # only Contents: Homebrew leaves a .brew_home here, which would break the signature
+    (prefix/"Wingbar.app").install app/"Contents"
     bin.install_symlink prefix/"Wingbar.app/Contents/MacOS/wingbar"
   end
 
