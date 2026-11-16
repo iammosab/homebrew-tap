@@ -1,9 +1,8 @@
 class Wingbar < Formula
   desc "Light native macOS status bar: workspaces and script widgets in two wings"
   homepage "https://github.com/iammosab/wingbar"
-  # url, version and sha256 are updated by wingbar's release workflow
+  # url and sha256 are updated by wingbar's release workflow
   url "https://github.com/iammosab/wingbar/releases/download/v0.3.1/wingbar-macos.zip"
-  version "0.3.1"
   sha256 "5cdcb759ce1da23bc9a894bbaae29e4041520bee652c21832976f3aa94817218"
   license "MIT"
 
