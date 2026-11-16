@@ -4,7 +4,7 @@ class Wingbar < Formula
   # url, version and sha256 are updated by wingbar's release workflow
   url "https://github.com/iammosab/wingbar/releases/download/v0.3.1/wingbar-macos.zip"
   version "0.3.1"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "5cdcb759ce1da23bc9a894bbaae29e4041520bee652c21832976f3aa94817218"
   license "MIT"
 
   depends_on :macos
